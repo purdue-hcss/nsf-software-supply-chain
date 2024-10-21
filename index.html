@@ -134,8 +134,24 @@ in real-world software systems.<br>
             <div class="u-container-style u-tab-pane u-tab-pane-2" id="tab-4d5f" role="tabpanel" aria-labelledby="link-tab-4d5f">
               <div class="u-container-layout u-container-layout-2">
                 <div class="u-clearfix u-group-elements u-group-elements-1">
-                  <p class="u-hover-feature u-text u-text-1"> Knowledge Graph</p>
-                  <p class="u-custom-font u-font-source-sans-pro u-text u-text-2">The figure below demonstrates an example knowledge graph for software supply chain security, where each entity—such as a software library or a vulnerability—is represented as a node, and the relations between them are depicted as edges. For instance, the entity "Apache Log4j," a widely-used logging library, is shown as a node connected to its different versions, such as v2.16.0. These versions are further linked to other entities, indicating dependencies on different applications (e.g., Cisco CX Cloud) or vulnerabilities associated with them (e.g., "Denial of Service").</p>
+                  <p class="u-hover-feature u-text u-text-1">Introduction</p>
+                  <p class="u-text u-text-2">The Secure Chain Knowledge Graph is a comprehensive knowledge graph designed to model the relationships between software, hardware, vulnerabilities, and other entities to support secure and transparent management of software supply chains.</p>
+                  <br>
+                  <p class="u-hover-feature u-text u-text-1">Resources</p>
+                  <ul class="u-text u-text-2">
+                    <li>
+                      <span style="font-weight: 700;">Ontology Documentation</span>: <a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-10" target="_blank">[w3id]</a>
+                      <span class="u-text-palette-1-base"></span>
+                    </li>
+                    <li>
+                      <span style="font-weight: 700;">Data Dump</span>: <a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-13" target="_blank">[RDF]</a>
+                      <br>
+                    </li>
+                  </ul>  
+                  <br>
+                  <p class="u-hover-feature u-text u-text-1">Design</p>
+                  <p class="u-text u-text-2">The Secure Chain Ontology builds on top of <a href="https://schema.org/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-14" target="_blank">Schema.org</a>, as shown in the figure below, extending its vocabulary to seamlessly integrate with its metadata properties and enhance interoperability across various systems.</p>
+                  <p class="u-text u-text-2">We use sc:Software as a central concept in the Secure Chain Ontology to represent software within secure supply chains, with associated sc:SoftwareVersions capturing the evolution of software over time. These versions are critical for tracking vulnerabilities, compliance, and updates. The ontology models dependencies between software versions and other components, such as hardware, through properties like sc:dependsOn and sc:OperatesOn, which help assess potential risks and identify vulnerabilities. Additionally, sc:License links each software version to its legal aspects, ensuring compliance across the supply chain. The ontology also extends to hardware through sc:Hardware and sc:HardwareVersions, allowing for comprehensive tracking of both digital and physical components. Vulnerabilities are represented through sc:Vulnerability and sc:VulnerabilityType, with links to the entities that discover them, providing a detailed view of security risks across software and hardware versions.</p>
                   <img class="u-align-center u-expanded-width-xs u-image u-image-contain u-image-default u-image-1" src="images/image11.png" alt="" data-image-width="790" data-image-height="518">
                 </div>
               </div>
@@ -148,15 +164,16 @@ in real-world software systems.<br>
                     <li>
                       <span style="font-weight: 700;">SPARQL Visual Query Interface</span>: A user-friendly, interactive knowledge graph query interface built with Blockly&nbsp;<a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-10" target="_blank">[Demo]</a>
                       <a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-11" target="_blank">[GitHub]</a>
-                      <a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-12" target="_blank">[Huggingface]</a>
+                      <a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-12" target="_blank">[Docker]</a>
+                      <a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-13" target="_blank">[npm]</a>
                       <span class="u-text-palette-1-base"></span>
                     </li>
                     <li>
-                      <span style="font-weight: 700;">Named Entity Recognition Model</span>: A pre-trained Named Entity Recognition model developed to identify software, hardware, vulnerabilities, and other entities within the Secure Chain knowledge graph <a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-13" target="_blank">[Huggingface]</a>
+                      <span style="font-weight: 700;">Named Entity Recognition Model</span>: A pre-trained Named Entity Recognition model developed to identify software, hardware, vulnerabilities, and other entities within the Secure Chain knowledge graph <a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-14" target="_blank">[Huggingface]</a>
                       <br>
                     </li>
                     <li>
-                      <span style="font-weight: 700;">Relation Extraction Model</span>:&nbsp;A pre-trained Relation Extraction model developed to identify and extract relationships between entities, enhancing the comprehensiveness of the Secure Chain knowledge graph <a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-14" target="_blank">[Huggingface]</a>
+                      <span style="font-weight: 700;">Relation Extraction Model</span>:&nbsp;A pre-trained Relation Extraction model developed to identify and extract relationships between entities, enhancing the comprehensiveness of the Secure Chain knowledge graph <a href="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-15" target="_blank">[Huggingface]</a>
                     </li>
                   </ul>  
                   <br>
