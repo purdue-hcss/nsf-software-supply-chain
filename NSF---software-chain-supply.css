@@ -1228,6 +1228,12 @@
   padding: 0;
 }
 
+.u-section-3 .u-image-12 {
+  width: 100%;
+  height: auto;
+  margin-top: 29px;
+}
+
 @media (max-width: 1199px) {
   .u-section-3 .u-group-elements-1 {
     height: auto;
