@@ -276,6 +276,17 @@
   font-weight: 700;
 }
 
+.u-section-3 .u-tab-item-6 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.u-section-3 .u-tab-link-6 {
+  background-image: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .u-section-3 .u-tab-pane-1 {
   margin-top: 0;
   margin-bottom: 0;
@@ -1215,6 +1226,12 @@
   background-image: none;
   font-size: 0.9375rem;
   padding: 0;
+}
+
+.u-section-3 .u-image-12 {
+  width: 100%;
+  height: auto;
+  margin-top: 29px;
 }
 
 @media (max-width: 1199px) {
